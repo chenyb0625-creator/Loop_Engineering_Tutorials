@@ -1,0 +1,24 @@
+name: 文档改进
+description: 报告不清晰、过时、失效或缺少示例的内容
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 文档位置
+      description: 文件路径、章节标题或链接
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: 当前问题
+      description: 哪一部分难以理解或无法执行？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议修改
+      description: 如果可以，请给出更清晰的表述或可运行示例。

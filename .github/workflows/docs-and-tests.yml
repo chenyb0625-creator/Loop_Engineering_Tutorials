@@ -1,0 +1,27 @@
+name: docs-and-tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Check Markdown and local links
+        run: python scripts/check_docs.py
+
+      - name: Run smoke tests
+        run: python -m unittest discover -s tests -v
