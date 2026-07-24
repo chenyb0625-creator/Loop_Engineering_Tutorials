@@ -1,0 +1,18 @@
+## 变更目的
+
+<!-- 这个 PR 解决什么问题？ -->
+
+## 变更范围
+
+<!-- 列出修改的章节、示例或脚本。 -->
+
+## 验证
+
+```text
+python scripts/check_docs.py
+python -m unittest discover -s tests -v
+```
+
+## 边界与后续
+
+<!-- 哪些情况尚未覆盖？是否需要人工复核？ -->
