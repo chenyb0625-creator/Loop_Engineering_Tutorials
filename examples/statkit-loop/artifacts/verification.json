@@ -1,0 +1,17 @@
+{
+  "verdict": "FAIL",
+  "command": [
+    "C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "C:\\Users\\ASUS\\Desktop\\人工智能全整理复习\\Loop Engineering-byChatGPT\\examples\\statkit-loop\\workspace\\tests",
+    "-v"
+  ],
+  "exit_code": 1,
+  "workspace_fingerprint": "f0fee98d3d98c996797b63953e2c72b181366070cfc7a06d28d1bced8ee7a947",
+  "started_at": "2026-07-23T15:26:47.966390+00:00",
+  "finished_at": "2026-07-23T15:26:48.102729+00:00",
+  "output": "test_constant_sequence_becomes_zeroes (test_normalize.NormalizeTest.test_constant_sequence_becomes_zeroes) ... FAIL\ntest_empty_sequence (test_normalize.NormalizeTest.test_empty_sequence) ... ok\ntest_input_is_not_modified (test_normalize.NormalizeTest.test_input_is_not_modified) ... ok\ntest_mixed_sign_values_use_min_max_scaling (test_normalize.NormalizeTest.test_mixed_sign_values_use_min_max_scaling) ... FAIL\ntest_positive_values_do_not_assume_zero_minimum (test_normalize.NormalizeTest.test_positive_values_do_not_assume_zero_minimum) ... FAIL\n\n======================================================================\nFAIL: test_constant_sequence_becomes_zeroes (test_normalize.NormalizeTest.test_constant_sequence_becomes_zeroes)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\ASUS\\Desktop\\人工智能全整理复习\\Loop Engineering-byChatGPT\\examples\\statkit-loop\\workspace\\tests\\test_normalize.py\", line 19, in test_constant_sequence_becomes_zeroes\n    self.assertEqual(normalize([7.0, 7.0, 7.0]), [0.0, 0.0, 0.0])\nAssertionError: Lists differ: [1.0, 1.0, 1.0] != [0.0, 0.0, 0.0]\n\nFirst differing element 0:\n1.0\n0.0\n\n- [1.0, 1.0, 1.0]\n?  ^    ^    ^\n\n+ [0.0, 0.0, 0.0]\n?  ^    ^    ^\n\n\n======================================================================\nFAIL: test_mixed_sign_values_use_min_max_scaling (test_normalize.NormalizeTest.test_mixed_sign_values_use_min_max_scaling)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\ASUS\\Desktop\\人工智能全整理复习\\Loop Engineering-byChatGPT\\examples\\statkit-loop\\workspace\\tests\\test_normalize.py\", line 13, in test_mixed_sign_values_use_min_max_scaling\n    self.assertEqual(normalize([-2.0, 0.0, 2.0]), [0.0, 0.5, 1.0])\nAssertionError: Lists differ: [-1.0, 0.0, 1.0] != [0.0, 0.5, 1.0]\n\nFirst differing element 0:\n-1.0\n0.0\n\n- [-1.0, 0.0, 1.0]\n+ [0.0, 0.5, 1.0]\n\n======================================================================\nFAIL: test_positive_values_do_not_assume_zero_minimum (test_normalize.NormalizeTest.test_positive_values_do_not_assume_zero_minimum)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\ASUS\\Desktop\\人工智能全整理复习\\Loop Engineering-byChatGPT\\examples\\statkit-loop\\workspace\\tests\\test_normalize.py\", line 16, in test_positive_values_do_not_assume_zero_minimum\n    self.assertEqual(normalize([10.0, 20.0, 30.0]), [0.0, 0.5, 1.0])\nAssertionError: Lists differ: [0.3333333333333333, 0.6666666666666666, 1.0] != [0.0, 0.5, 1.0]\n\nFirst differing element 0:\n0.3333333333333333\n0.0\n\n- [0.3333333333333333, 0.6666666666666666, 1.0]\n+ [0.0, 0.5, 1.0]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=3)"
+}

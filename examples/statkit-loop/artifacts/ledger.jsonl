@@ -1,0 +1,7 @@
+{"timestamp": "2026-07-23T15:26:47.465519+00:00", "event": "run_started", "worker": "noop", "max_iterations": 1, "stagnation_limit": 5}
+{"timestamp": "2026-07-23T15:26:47.551150+00:00", "event": "policy_checked", "iteration": 0, "exit_code": 0}
+{"timestamp": "2026-07-23T15:26:47.785489+00:00", "event": "verified", "iteration": 0, "exit_code": 1, "workspace_fingerprint": "f0fee98d3d98c996797b63953e2c72b181366070cfc7a06d28d1bced8ee7a947"}
+{"timestamp": "2026-07-23T15:26:47.822488+00:00", "event": "worker_finished", "iteration": 1, "worker": "noop", "exit_code": 0, "before_fingerprint": "f0fee98d3d98c996797b63953e2c72b181366070cfc7a06d28d1bced8ee7a947", "after_fingerprint": "f0fee98d3d98c996797b63953e2c72b181366070cfc7a06d28d1bced8ee7a947"}
+{"timestamp": "2026-07-23T15:26:47.898873+00:00", "event": "policy_checked", "iteration": 1, "exit_code": 0}
+{"timestamp": "2026-07-23T15:26:48.115726+00:00", "event": "verified", "iteration": 1, "exit_code": 1, "workspace_fingerprint": "f0fee98d3d98c996797b63953e2c72b181366070cfc7a06d28d1bced8ee7a947"}
+{"timestamp": "2026-07-23T15:26:48.116725+00:00", "event": "terminal", "status": "BUDGET_EXHAUSTED", "updated_at": "2026-07-23T15:26:48.115726+00:00", "iteration": 1, "workspace_fingerprint": "f0fee98d3d98c996797b63953e2c72b181366070cfc7a06d28d1bced8ee7a947"}

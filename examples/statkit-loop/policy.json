@@ -1,0 +1,8 @@
+{
+  "protected_paths": [
+    "workspace/tests"
+  ],
+  "allowed_write_paths": [
+    "workspace/src/statkit/normalize.py"
+  ]
+}
